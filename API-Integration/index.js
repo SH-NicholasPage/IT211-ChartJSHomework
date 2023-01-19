@@ -25,8 +25,6 @@ function getForecast()
         function(data) //Code if success
         { 
             console.log(data);
-            //generateCard(new Date(data[0].date).toLocaleString( 'sv', { timeZoneName: 'short' } ));//Test
-
             generateCard(data); 
         },
         function(error) //Code if failure
